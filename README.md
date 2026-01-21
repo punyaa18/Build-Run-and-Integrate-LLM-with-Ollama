@@ -61,3 +61,7 @@ ollama run Dev_assistant
 ## Notes
 - If you see `model not found`, rebuild from the Modelfile or verify Ollama is running.
 - The repo is git-ready; create your GitHub repository and push when ready.
+
+  ## For more information
+  refer to this website or feel free to reach out to me!
+  https://blogs.perficient.com/2025/08/01/build-run-and-integrate-your-own-llm-with-ollama/

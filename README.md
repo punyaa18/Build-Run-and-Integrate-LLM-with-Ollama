@@ -2,7 +2,7 @@
 
 A minimal starter repo for creating a custom local LLM with Ollama using a Modelfile and a Python integration example.
 
-![Ollama Setup](images/blog-4.1-1536x460.png)
+
 
 ## Prerequisites
 - Ollama installed and running locally (see https://ollama.com)
@@ -17,16 +17,21 @@ A minimal starter repo for creating a custom local LLM with Ollama using a Model
 
 ## Build the custom model
 1) Ensure the Modelfile is in the project root and you are in this directory.
-2) Create the model:
+   ![Ollama Setup](images/blog-4.1-1536x460.png)
+   
+![Creating Custom Model](images/blog-4.2-1536x871.png)
+
+   
+3) Create the model:
    ```bash
    ollama create Dev_assistant -f Modelfile
    ```
-3) Verify it appears:
+4) Verify it appears:
    ```bash
    ollama list
    ```
+<img width="898" height="151" alt="image" src="https://github.com/user-attachments/assets/e86dfa22-9718-499e-96e4-7209f594e738" />
 
-![Creating Custom Model](images/blog-4.2-1536x871.png)
 
 ## Run the model
 Start an interactive chat:
@@ -34,7 +39,7 @@ Start an interactive chat:
 ollama run Dev_assistant
 ```
 
-![Running the Model](images/blog-4.3-1536x969.png)
+<img width="1536" height="369" alt="image" src="https://github.com/user-attachments/assets/382b2f57-ce25-4574-a11f-1064252939ed" />
 
 ## Python integration
 1) Install the client:
@@ -47,15 +52,11 @@ ollama run Dev_assistant
    ```
    This sends a single prompt and prints the model response.
 
-![Python Integration Example](images/blog-4.4.png)
-
-![Sample Output](images/blog-4.5.png)
 
 ## Customize
 - Adjust the system prompt or parameters in [Modelfile](Modelfile), then rebuild the model with `ollama create Dev_assistant -f Modelfile`.
 - Switch the model name in [app.py](app.py) if you create a differently named model.
 
-![Customization Options](images/blog-4.6-1536x369.png)
 
 ## Notes
 - If you see `model not found`, rebuild from the Modelfile or verify Ollama is running.

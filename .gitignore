@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Environments
+.env
+.venv/
+.env*/
+venv/
+
+# IDE/editor
+.vscode/
+.idea/
+.DS_Store
+
+# Byte-compiled / logs
+*.log
+
+# Ollama artifacts
+models/
